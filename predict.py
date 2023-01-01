@@ -24,6 +24,7 @@ class Predictor(cog.Predictor):
     def setup(self):
         pass
 
+    # Define the input types for a prediction
     @cog.input("input_face", type=Path, help="Photo of human face")
     @cog.input(
         "pretrained",
@@ -97,7 +98,8 @@ class Predictor(cog.Predictor):
         aligned_face = align_face(str(input_face))
 
         my_w = e4e_projection(aligned_face, "input_face.pt", device).unsqueeze(0)
-
+        
+        # Generate images using pretrained network
         if pretrained is not None:
             if (
                 preserve_color
@@ -116,12 +118,14 @@ class Predictor(cog.Predictor):
             with torch.no_grad():
                 generator.eval()
                 stylized_face = generator(my_w, input_is_latent=True)
-
+        
+        # pretrained network not exist
         else:
             # finetune with new style images
             targets = []
             latents = []
-
+            
+            # Set style reference images array
             style_imgs = [style_img_0, style_img_1, style_img_2, style_img_3]
 
             # Remove None values
@@ -140,7 +144,8 @@ class Predictor(cog.Predictor):
 
                 targets.append(transform(style_aligned).to(device))
                 latents.append(latent.to(device))
-
+            
+            # Save the step 1 result
             targets = torch.stack(targets, 0)
             latents = torch.stack(latents, 0)
 
@@ -161,6 +166,7 @@ class Predictor(cog.Predictor):
             else:
                 id_swap = list(range(7, generator.n_latent))
 
+            # iterative training
             for idx in tqdm(range(num_iter)):
                 mean_w = (
                     generator.get_latent(

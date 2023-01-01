@@ -1,0 +1,126 @@
+Date : 2022-12-31 00:49:45
+Directory : d:\project\python\JoJoGAN
+Total : 76 files,  8626 codes, 250 comments, 1372 blanks, all 10248 lines
+
+Languages
++----------+------------+------------+------------+------------+------------+
+| language | files      | code       | comment    | blank      | total      |
++----------+------------+------------+------------+------------+------------+
+| Python   |         57 |      4,002 |        230 |      1,137 |      5,369 |
+| XML      |          5 |      2,533 |          0 |          8 |      2,541 |
+| JSON     |          2 |      1,216 |          0 |          0 |      1,216 |
+| CUDA C++ |          4 |        558 |         20 |        164 |        742 |
+| Markdown |          2 |        160 |          0 |         37 |        197 |
+| YAML     |          2 |         93 |          0 |          2 |         95 |
+| C++      |          4 |         64 |          0 |         24 |         88 |
++----------+------------+------------+------------+------------+------------+
+
+Directories
++----------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                       | files      | code       | comment    | blank      | total      |
++----------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                          |         76 |      8,626 |        250 |      1,372 |     10,248 |
+| e4e                                                                        |         59 |      6,278 |        207 |        863 |      7,348 |
+| e4e\configs                                                                |          4 |        107 |          5 |         23 |        135 |
+| e4e\criteria                                                               |          8 |        213 |         18 |         69 |        300 |
+| e4e\criteria\lpips                                                         |          4 |        104 |         12 |         48 |        164 |
+| e4e\datasets                                                               |          4 |         69 |          2 |         23 |         94 |
+| e4e\editings                                                               |          8 |      2,619 |          6 |         32 |      2,657 |
+| e4e\editings\ganspace_pca                                                  |          2 |      2,184 |          0 |          8 |      2,192 |
+| e4e\editings\interfacegan_directions                                       |          3 |        349 |          0 |          0 |        349 |
+| e4e\environment                                                            |          1 |         72 |          0 |          2 |         74 |
+| e4e\metrics                                                                |          1 |         81 |         27 |         27 |        135 |
+| e4e\models                                                                 |         17 |      1,474 |         64 |        435 |      1,973 |
+| e4e\models\encoders                                                        |          4 |        330 |         29 |         69 |        428 |
+| e4e\models\stylegan2                                                       |          9 |      1,014 |         15 |        338 |      1,367 |
+| e4e\models\stylegan2\op                                                    |          7 |        517 |         12 |        158 |        687 |
+| e4e\notebooks                                                              |          1 |        588 |          0 |          0 |        588 |
+| e4e\options                                                                |          2 |         66 |          4 |         16 |         86 |
+| e4e\scripts                                                                |          3 |        244 |          4 |         63 |        311 |
+| e4e\training                                                               |          3 |        443 |         56 |        104 |        603 |
+| e4e\utils                                                                  |          6 |        180 |         21 |         48 |        249 |
+| op                                                                         |         10 |        807 |         12 |        244 |      1,063 |
++----------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++----------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| filename                                                                   | language | code       | comment    | blank      | total      |
++----------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| d:\project\python\JoJoGAN\README.md                                        | Markdown |         38 |          0 |         16 |         54 |
+| d:\project\python\JoJoGAN\cog.yaml                                         | YAML     |         21 |          0 |          0 |         21 |
+| d:\project\python\JoJoGAN\e4e\README.md                                    | Markdown |        122 |          0 |         21 |        143 |
+| d:\project\python\JoJoGAN\e4e\configs\__init__.py                          | Python   |          0 |          0 |          1 |          1 |
+| d:\project\python\JoJoGAN\e4e\configs\data_configs.py                      | Python   |         39 |          0 |          3 |         42 |
+| d:\project\python\JoJoGAN\e4e\configs\paths_config.py                      | Python   |         18 |          5 |          6 |         29 |
+| d:\project\python\JoJoGAN\e4e\configs\transforms_config.py                 | Python   |         50 |          0 |         13 |         63 |
+| d:\project\python\JoJoGAN\e4e\criteria\__init__.py                         | Python   |          0 |          0 |          1 |          1 |
+| d:\project\python\JoJoGAN\e4e\criteria\id_loss.py                          | Python   |         42 |          0 |          6 |         48 |
+| d:\project\python\JoJoGAN\e4e\criteria\lpips\__init__.py                   | Python   |          0 |          0 |          1 |          1 |
+| d:\project\python\JoJoGAN\e4e\criteria\lpips\lpips.py                      | Python   |         17 |          8 |         11 |         36 |
+| d:\project\python\JoJoGAN\e4e\criteria\lpips\networks.py                   | Python   |         68 |          1 |         27 |         96 |
+| d:\project\python\JoJoGAN\e4e\criteria\lpips\utils.py                      | Python   |         19 |          3 |          9 |         31 |
+| d:\project\python\JoJoGAN\e4e\criteria\moco_loss.py                        | Python   |         57 |          6 |          9 |         72 |
+| d:\project\python\JoJoGAN\e4e\criteria\w_norm.py                           | Python   |         10 |          0 |          5 |         15 |
+| d:\project\python\JoJoGAN\e4e\datasets\__init__.py                         | Python   |          0 |          0 |          1 |          1 |
+| d:\project\python\JoJoGAN\e4e\datasets\gt_res_dataset.py                   | Python   |         24 |          2 |          7 |         33 |
+| d:\project\python\JoJoGAN\e4e\datasets\images_dataset.py                   | Python   |         25 |          0 |          9 |         34 |
+| d:\project\python\JoJoGAN\e4e\datasets\inference_dataset.py                | Python   |         20 |          0 |          6 |         26 |
+| d:\project\python\JoJoGAN\e4e\editings\ganspace.py                         | Python   |         17 |          1 |          5 |         23 |
+| d:\project\python\JoJoGAN\e4e\editings\ganspace_pca\cars_pca.pt            | XML      |      1,083 |          0 |          4 |      1,087 |
+| d:\project\python\JoJoGAN\e4e\editings\ganspace_pca\ffhq_pca.pt            | XML      |      1,101 |          0 |          4 |      1,105 |
+| d:\project\python\JoJoGAN\e4e\editings\interfacegan_directions\age.pt      | XML      |         30 |          0 |          0 |         30 |
+| d:\project\python\JoJoGAN\e4e\editings\interfacegan_directions\pose.pt     | XML      |        297 |          0 |          0 |        297 |
+| d:\project\python\JoJoGAN\e4e\editings\interfacegan_directions\smile.pt    | XML      |         22 |          0 |          0 |         22 |
+| d:\project\python\JoJoGAN\e4e\editings\latent_editor.py                    | Python   |         34 |          4 |          8 |         46 |
+| d:\project\python\JoJoGAN\e4e\editings\sefa.py                             | Python   |         35 |          1 |         11 |         47 |
+| d:\project\python\JoJoGAN\e4e\environment\e4e_env.yaml                     | YAML     |         72 |          0 |          2 |         74 |
+| d:\project\python\JoJoGAN\e4e\metrics\LEC.py                               | Python   |         81 |         27 |         27 |        135 |
+| d:\project\python\JoJoGAN\e4e\models\__init__.py                           | Python   |          0 |          0 |          1 |          1 |
+| d:\project\python\JoJoGAN\e4e\models\discriminator.py                      | Python   |         15 |          0 |          6 |         21 |
+| d:\project\python\JoJoGAN\e4e\models\encoders\__init__.py                  | Python   |          0 |          0 |          1 |          1 |
+| d:\project\python\JoJoGAN\e4e\models\encoders\helpers.py                   | Python   |         99 |         19 |         23 |        141 |
+| d:\project\python\JoJoGAN\e4e\models\encoders\model_irse.py                | Python   |         58 |          9 |         18 |         85 |
+| d:\project\python\JoJoGAN\e4e\models\encoders\psp_encoders.py              | Python   |        173 |          1 |         27 |        201 |
+| d:\project\python\JoJoGAN\e4e\models\latent_codes_pool.py                  | Python   |         33 |         17 |          6 |         56 |
+| d:\project\python\JoJoGAN\e4e\models\psp.py                                | Python   |         82 |          3 |         15 |        100 |
+| d:\project\python\JoJoGAN\e4e\models\stylegan2\__init__.py                 | Python   |          0 |          0 |          1 |          1 |
+| d:\project\python\JoJoGAN\e4e\models\stylegan2\model.py                    | Python   |        497 |          3 |        179 |        679 |
+| d:\project\python\JoJoGAN\e4e\models\stylegan2\op\__init__.py              | Python   |          0 |          0 |          1 |          1 |
+| d:\project\python\JoJoGAN\e4e\models\stylegan2\op\fused_act.py             | Python   |         61 |          0 |         25 |         86 |
+| d:\project\python\JoJoGAN\e4e\models\stylegan2\op\fused_bias_act.cpp       | C++      |         15 |          0 |          6 |         21 |
+| d:\project\python\JoJoGAN\e4e\models\stylegan2\op\fused_bias_act_kernel.cu | CUDA C++ |         71 |          5 |         23 |         99 |
+| d:\project\python\JoJoGAN\e4e\models\stylegan2\op\upfirdn2d.cpp            | C++      |         17 |          0 |          6 |         23 |
+| d:\project\python\JoJoGAN\e4e\models\stylegan2\op\upfirdn2d.py             | Python   |        145 |          2 |         38 |        185 |
+| d:\project\python\JoJoGAN\e4e\models\stylegan2\op\upfirdn2d_kernel.cu      | CUDA C++ |        208 |          5 |         59 |        272 |
+| d:\project\python\JoJoGAN\e4e\notebooks\inference_playground.ipynb         | JSON     |        588 |          0 |          0 |        588 |
+| d:\project\python\JoJoGAN\e4e\options\__init__.py                          | Python   |          0 |          0 |          1 |          1 |
+| d:\project\python\JoJoGAN\e4e\options\train_options.py                     | Python   |         66 |          4 |         15 |         85 |
+| d:\project\python\JoJoGAN\e4e\scripts\calc_losses_on_images.py             | Python   |         72 |          0 |         16 |         88 |
+| d:\project\python\JoJoGAN\e4e\scripts\inference.py                         | Python   |        106 |          1 |         27 |        134 |
+| d:\project\python\JoJoGAN\e4e\scripts\train.py                             | Python   |         66 |          3 |         20 |         89 |
+| d:\project\python\JoJoGAN\e4e\training\__init__.py                         | Python   |          0 |          0 |          1 |          1 |
+| d:\project\python\JoJoGAN\e4e\training\coach.py                            | Python   |        359 |         15 |         64 |        438 |
+| d:\project\python\JoJoGAN\e4e\training\ranger.py                           | Python   |         84 |         41 |         39 |        164 |
+| d:\project\python\JoJoGAN\e4e\utils\__init__.py                            | Python   |          0 |          0 |          1 |          1 |
+| d:\project\python\JoJoGAN\e4e\utils\alignment.py                           | Python   |         82 |         15 |         19 |        116 |
+| d:\project\python\JoJoGAN\e4e\utils\common.py                              | Python   |         43 |          2 |         11 |         56 |
+| d:\project\python\JoJoGAN\e4e\utils\data_utils.py                          | Python   |         16 |          4 |          6 |         26 |
+| d:\project\python\JoJoGAN\e4e\utils\model_utils.py                         | Python   |         27 |          0 |          9 |         36 |
+| d:\project\python\JoJoGAN\e4e\utils\train_utils.py                         | Python   |         12 |          0 |          2 |         14 |
+| d:\project\python\JoJoGAN\e4e_projection.py                                | Python   |         31 |          0 |          5 |         36 |
+| d:\project\python\JoJoGAN\model.py                                         | Python   |        496 |          3 |        172 |        671 |
+| d:\project\python\JoJoGAN\op\__init__.py                                   | Python   |          0 |          0 |          1 |          1 |
+| d:\project\python\JoJoGAN\op\conv2d_gradfix.py                             | Python   |        182 |          0 |         46 |        228 |
+| d:\project\python\JoJoGAN\op\fused_act.py                                  | Python   |         93 |          0 |         35 |        128 |
+| d:\project\python\JoJoGAN\op\fused_act_cpu.py                              | Python   |         30 |          0 |         12 |         42 |
+| d:\project\python\JoJoGAN\op\fused_bias_act.cpp                            | C++      |         15 |          0 |          6 |         21 |
+| d:\project\python\JoJoGAN\op\fused_bias_act_kernel.cu                      | CUDA C++ |         71 |          5 |         23 |         99 |
+| d:\project\python\JoJoGAN\op\upfirdn2d.cpp                                 | C++      |         17 |          0 |          6 |         23 |
+| d:\project\python\JoJoGAN\op\upfirdn2d.py                                  | Python   |        145 |          2 |         41 |        188 |
+| d:\project\python\JoJoGAN\op\upfirdn2d_cpu.py                              | Python   |         46 |          0 |         15 |         61 |
+| d:\project\python\JoJoGAN\op\upfirdn2d_kernel.cu                           | CUDA C++ |        208 |          5 |         59 |        272 |
+| d:\project\python\JoJoGAN\predict.py                                       | Python   |        160 |         11 |         40 |        211 |
+| d:\project\python\JoJoGAN\stylize.ipynb                                    | JSON     |        628 |          0 |          0 |        628 |
+| d:\project\python\JoJoGAN\util.py                                          | Python   |        167 |         17 |         32 |        216 |
+| Total                                                                      |          |      8,626 |        250 |      1,372 |     10,248 |
++----------------------------------------------------------------------------+----------+------------+------------+------------+------------+

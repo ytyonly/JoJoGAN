@@ -371,7 +371,7 @@ class StyledConv(nn.Module):
 
         return out
 
-
+# convert to the final ToRGB layer
 class ToRGB(nn.Module):
     def __init__(self, in_channel, style_dim, upsample=True, blur_kernel=[1, 3, 3, 1]):
         super().__init__()
@@ -626,6 +626,7 @@ class ResBlock(nn.Module):
         return out
 
 
+#
 class Discriminator(nn.Module):
     def __init__(self, size, channel_multiplier=2, blur_kernel=[1, 3, 3, 1]):
         super().__init__()
@@ -642,6 +643,7 @@ class Discriminator(nn.Module):
             1024: 16 * channel_multiplier,
         }
 
+        #Compute the convolution layers
         convs = [ConvLayer(3, channels[size], 1)]
 
         log_size = int(math.log(size, 2))
